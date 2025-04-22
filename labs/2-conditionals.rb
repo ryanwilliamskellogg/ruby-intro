@@ -30,3 +30,15 @@ puts die2
 # 3. create a variable for the total and write it to the screen
 total = die1 + die2
 puts "The total is: #{total}"
+
+# 4. Output conditions
+
+# if the total is 7 or 11 that is a win
+if total == 7 || total == 11
+    puts "YOU WIN!"
+# if the total is 2, 3, or 12 that is a loss
+elsif total == 2 || total == 3 || total == 12
+    puts "YOU LOSE!"
+# if the total is any other number you garner points
+else puts "THE POINT IS #{total}"
+end
